@@ -1,6 +1,30 @@
-<h3>choose your favourite salon<h3></h3>
-<ul>
-    <li *ngFor="let store of stores">
-        <img src="{{store}}" alt="store image">
-    </li>
+
+<h3>choose your favourite salon</h3>
+
+<ul >
+  <li *ngFor="let store of stores">
+    <a routerLink="/service">
+      <img src="{{ store.imageurl }}" alt="store image" />
+      <div class="content">
+        <div class="name">
+            <div class="row">
+                <div class="col-sm-10">{{ store.name }}</div>
+                <div class="col-sm-2">
+                    <span class="favorite {{ store.favorite ? '' : 'not' }}">
+                        &hearts;
+                      </span>
+                </div>
+            </div>
+         
+        </div>
+        
+        <div class="store-detail-footer">
+          <div class="address"><span>⌖</span> {{ store.address }}</div>
+          <div class="services">  
+            <p>Special for {{ store.services }}</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </li>
 </ul>

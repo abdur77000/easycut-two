@@ -1,0 +1,49 @@
+book-button:hover{
+    opacity: 0.9rem;
+}
+
+  .book-button {
+    padding: 8px 16px;
+    background-color: #50a0ef;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer; 
+
+    
+    
+   
+    
+  }
+   .price{
+   
+  
+    font-size: 20px;
+    font-weight: stroke;
+    color: #010f0b;
+    
+  
+
+
+   }
+ .name{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgb(7, 1, 1);
+    
+   
+    padding: 20px;
+    font-weight: bold;
+    
+   
+ }
+ ul    {
+    padding: 0;
+    
+}
+
+ 
+  
+
