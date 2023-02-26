@@ -10,6 +10,10 @@ import { FooterComponent } from './footer/footer.component';
 import {LoginComponent} from './login/login.component'
 import {MenuComponent} from './menu/menu.component'
 import{RegisterComponent} from './register/register.component'
+import { ServiceComponent } from './service/service.component';
+import { AppointmentComponent } from './appointment/appointment.component';
+
+
 
 @NgModule({
   declarations: [
@@ -20,7 +24,13 @@ import{RegisterComponent} from './register/register.component'
     FooterComponent,
     LoginComponent,
     MenuComponent,
-    RegisterComponent
+    RegisterComponent,
+    ServiceComponent,
+    AppointmentComponent,
+    
+    
+    
+    
   ],
   imports: [
     BrowserModule,
