@@ -1,36 +1,48 @@
+<form class="border p-3 rounded-3" [formGroup]="loginForm" (ngSubmit)="loginSubmited()">
 <div class="container-fluid login-cont">
     <div class="login-form">
         <div class="main-div">
             <div class="panel">
                 <p>Login</p>
             </div>
-            <form id="Login">
-
-                <div class="form-group">
-                    <input type="email" class="form-control" id="inputEmail"  name="email" placeholder="Email Address">
-
+            <div class="row">
+                <div class="col mb-3">
+                    
+                    <input type="email"  class="form-control" formControlName=" email" id="inputEmail"  name="email" placeholder="Email Address">
+                    <div class="form-text text-danger" *ngIf="Email.errors?.['required'] && (Email.dirty || Email.touched)">
+                        Email is Required
+                    </div>
+                    <div class="form-text text-danger" *ngIf="Email.errors?.['email'] && (Email.dirty || Email.touched)" >
+                        Email is Invalid.
+                        </div> 
                 </div>
                
-                <div class="form-group">
-
-                    <input type="Phone Number" class="form-control" id="inputNumber" name="Number" placeholder="Phone Number">
-
+            </div>
+                <div class="row">
+                    <div class="col mb-3">
+                    <input type="password" class="form-control" formControlName="pwd" id="inputPassword" name="password" placeholder="Password">
+                    <div class="form-text text-danger" *ngIf=" PWD.errors?.['required'] && ( PWD.touched ||  PWD.dirty)" >
+                        Password is Required.
+                       </div>
+                      <div class="form-text text-danger" *ngIf=" PWD.errors?.['minlength'] ||  PWD.errors?.['maxlength'] && ( PWD.touched ||  PWD.dirty)" >
+                        Password should be atleast 6 and at the max 15 characters long.
+                        </div>
                 </div>
-                <div class="form-group">
-
-                    <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Password">
-
-                </div>
-<!--                        <div class="forgot">
+            </div>
+                  <div class="forgot">
                     <a href="reset.html">Forgot password?</a>
-                </div>-->
-                <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+                
+                <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary">Login</button>
 
-            </form>
+         
             <div  class="row">
 
             </div>
            
-            <p>Don't have an account? <a href="#" routerLink="register" routerLinkActive="actice-link"> Register here</a></p>
+            <p>Don't have an account? 
+            
+                <a href="#" routerLink="register" routerLinkActive="actice-link"> Register here</a></p>
         </div>
     </div></div>
+</form>

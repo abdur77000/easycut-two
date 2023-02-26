@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -9,7 +9,8 @@ import { ListComponent } from './stores/list/list.component';
 import { FooterComponent } from './footer/footer.component';
 import {LoginComponent} from './login/login.component'
 import {MenuComponent} from './menu/menu.component'
-import{RegisterComponent} from './register/register.component'
+import{RegisterComponent} from './register/register.component';
+import { MerchantComponent } from './merchant/merchant.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +21,15 @@ import{RegisterComponent} from './register/register.component'
     FooterComponent,
     LoginComponent,
     MenuComponent,
-    RegisterComponent
+    RegisterComponent,
+    MerchantComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

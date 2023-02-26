@@ -27,7 +27,7 @@ hr {
 
 /* Set a style for the submit/register button */
 .registerbtn {
-  background-color: #b7710fce;
+  background-color: #6F4E37;
   color: white;
   padding: 16px 20px;
   margin: 8px 0;
@@ -43,7 +43,7 @@ hr {
 
 /* Add a blue text color to links */
 a {
-  color: #b7710fce(255, 139, 30);
+  color: #6F4E37(255, 139, 30);
 }
 
 /* Set a grey background color and center the text of the "sign in" section */
