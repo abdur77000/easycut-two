@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import{StoresService} from '../../services/stores.service';
+import { stores } from 'src/app/shared/model/stores';
 
 
 @Component({
@@ -8,7 +9,7 @@ import{StoresService} from '../../services/stores.service';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent { 
-  stores:string[]=[];
+  stores:stores[]=[];
   constructor(private st:StoresService){}
 
   ngOnInit():void{

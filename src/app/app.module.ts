@@ -11,6 +11,10 @@ import {LoginComponent} from './login/login.component'
 import {MenuComponent} from './menu/menu.component'
 import{RegisterComponent} from './register/register.component';
 import { MerchantComponent } from './merchant/merchant.component';
+import { ServiceComponent } from './service/service.component';
+import { AppointmentComponent } from './appointment/appointment.component';
+
+
 
 @NgModule({
   declarations: [
@@ -23,6 +27,11 @@ import { MerchantComponent } from './merchant/merchant.component';
     MenuComponent,
     RegisterComponent,
     MerchantComponent,
+    ServiceComponent,
+    AppointmentComponent,
+    
+    
+    
     
   ],
   imports: [
