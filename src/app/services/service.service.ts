@@ -7,7 +7,7 @@ import { services } from '../shared/model/service';
 export class ServicesService {
 
   constructor() { }
-  getAll():services[]{
+  getAll(){
     return[
       
       {
