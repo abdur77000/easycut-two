@@ -10,7 +10,7 @@ export class LoginComponent implements OnInit{
 constructor() { }
 
 ngOnInit(): void {
- 
+
 }
 loginForm = new FormGroup({
   email: new FormGroup("", [Validators.required, Validators.email]),
