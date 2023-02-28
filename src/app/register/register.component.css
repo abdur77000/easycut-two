@@ -1,53 +1,75 @@
-* {box-sizing: border-box}
-/* Add padding to containers */
-.container {
-  padding: 16px;
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+.register-block{
+    background: #b7710fce;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FFB88C, #b7710fce);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FFB88C, #b7710fce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+width:full;
+padding : 50px 0;
+}
+/*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}*/
+
+.container{ 
+ height:100%;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ 
+}
+.content{
+  background-color:white;
+  width:500px;
+  height:750px;
+  border-radius: 1rem;
 }
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
+.form-title{
+  padding:10px 40px 0px;
+}
+form{
+  padding:0px 40px;
+}
+input[type=text], [type=email]{
   border: none;
-  background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* Set a style for the submit/register button */
-.registerbtn {
-  background-color: #6F4E37;
-  color: white;
-  padding: 16px 20px;
+  border-bottom: 1px solid black;
+  outline:none;
+  width:100%;
   margin: 8px 0;
+  padding:10px 0;
+}
+input[type=number]{
   border: none;
+  border-bottom: 1px solid black;
+  outline:none;
+  margin: 8px 0;
+  padding:5px 0;
+}
+input :hover {
+  background-color: red;
+}
+
+button{
+  color:#ffffff;
+  background-color: #6F4E37;
+  height:40px;
+  width:25%;
+  margin-top:15px;
   cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+  border:none;
+  border-radius:2%;
+  outline:none;
+  text-align:center;
+  font-size:16px;
+  text-decoration:none;
+  -webkit-transition-duration:0.4s;
+  transition-duration:0.4s;
+}
+button:hover{
+  background-color:#333333;
 }
 
-.registerbtn:hover {
-  opacity:1;
-}
-
-/* Add a blue text color to links */
-a {
-  color: #6F4E37(255, 139, 30);
-}
-
-/* Set a grey background color and center the text of the "sign in" section */
-.signin {
-  background-color: #f1f1f1;
-  text-align: center;
-}

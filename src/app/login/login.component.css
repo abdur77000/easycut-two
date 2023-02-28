@@ -1,71 +1,21 @@
-div.login-cont{
-    height: 700px !important;
-    width: 100% !important;
-     background-image: url(../../assets/pic1.png);
-     background-repeat:no-repeat;
-     /* background-position:center; */
-     background-size:cover;
-     padding:10px;
-    }
-  
-  .form-heading { color:#fff; font-size:28px;}
-  .panel h2{ color:#6F4E37; font-size:18px; margin:0 0 8px 0;}
-  .panel p { color:#FFB88C; font-size:40px; margin-bottom:30px; line-height:24px;}
-  .login-form .form-control { 
-      
-      
-      border-radius: 2px;
-      font-size: 20px;
-      height: 60px;
-      line-height: 50px;
-  }
-  .main-div {
-     
-      border-radius: 2px;
-      margin: 10px auto 30px;
-      max-width: 38%;
-      padding: 70px 70px 70px 71px;
-  }
-  
-  .login-form .form-group {
-      margin-bottom:10px;
-      
-  }
-  .login-form .form-group span{
-    position: absolute;
-    width: 50px;
-    line-height: 50px;
-    color: #595959;
-  }
- 
-  .login-form{ text-align:center;}
-  .forgot a {
-      color: #007bff;
-      font-size: 20px;
-      text-decoration: underline;
-  }
-  .login-form  .btn.btn-primary {
-      background: #6F4E37 none repeat scroll 0 0;
-      border-color: #6F4E37;
-      color: #f7e6e6;
-      font-size: 24px;
-      width: 100%;
-      height: 50px;
-      line-height: 50px;
-      padding: 0;
-  }
-  .forgot {
-      text-align: left; margin-bottom:30px;
-  }
-  .botto-text {
-      color: #ffffff;
-      font-size: 30px;
-      margin: auto;
-      
-  }
-  .login-form .btn.btn-primary.reset {
-      background: #6F4E37 none repeat scroll 0 0;
-  }
-  .back { text-align: left; margin-top:10px;}
-  .back a {color: #6F4E37; font-size: 13px;text-decoration: none;}
-  
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+.login-block{
+    background: #b7710fce;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FFB88C, #b7710fce);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FFB88C, #b7710fce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+float:left;
+width:100%;
+padding : 50px 0;
+}
+.banner-sec{background:url(../../assets/pic1.png)  no-repeat left bottom; background-size:cover; min-height:500px; border-radius: 0 10px 10px 0; padding:0;}
+.container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+.carousel-inner{border-radius:0 10px 10px 0;}
+.carousel-caption{text-align:left; left:5%;}
+.login-sec{padding: 50px 30px; position:relative;}
+.login-sec .copy-text{position:absolute; width:80%; bottom:20px; font-size:13px; text-align:center;}
+.login-sec .copy-text i{color:#e39d3bce;}
+.login-sec .copy-text a{color:#b7710fce;}
+.login-sec h2{margin-bottom:30px; font-weight:800; font-size:30px; color: #b7710fce;}
+.login-sec h2:after{content:" "; width:100px; height:5px; background:#FEB58A; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
+.btn-login{background: #b7710fce; color:#fff; font-weight:600;}
