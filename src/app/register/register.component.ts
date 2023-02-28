@@ -7,7 +7,7 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 })
 export class RegisterComponent implements OnInit {
  
-repeatPass: string = 'none';
+repeatPass: string = 'all';
 
    constructor( ) { }
 
@@ -19,6 +19,7 @@ repeatPass: string = 'none';
       lastname: new FormGroup ('',[Validators.required,Validators.minLength(3), Validators.pattern("[a-zA-Z].*")]),
       email: new FormGroup ('',[Validators.required, Validators.email]), 
       mobile: new FormGroup ('',[Validators.required, Validators.pattern("[0-9]*"), Validators.minLength(10), Validators.maxLength(10),]),
+      registeras: new FormGroup ('',[Validators.required]),
       pwd: new FormGroup ('',[Validators.required, Validators.minLength(6), Validators.maxLength(15)]),
       rpwd: new FormGroup ('',),
     });
@@ -42,6 +43,10 @@ repeatPass: string = 'none';
     }
     get Mobile( ): FormControl {
       return this.registerForm.get("mobile") as FormControl;
+    }
+
+    get Registeras( ): FormControl {
+      return this.registerForm.get("registeras") as FormControl;
     }
     get Pwd( ): FormControl {
       return this.registerForm.get("pwd") as FormControl;
