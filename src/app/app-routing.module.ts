@@ -7,6 +7,8 @@ import { RegisterComponent } from './register/register.component';
 import { MerchantComponent } from './merchant/merchant.component';
 import { ServiceComponent } from './service/service.component';
 import { AppointmentComponent } from './appointment/appointment.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
 
@@ -17,7 +19,8 @@ const routes: Routes = [
   {path:'merchant',component:MerchantComponent,},
   {path: 'service',component:ServiceComponent,},
   {path:'appointment',component:AppointmentComponent,},
-  
+  {path:'aboutus',component:AboutusComponent,},
+  {path:'contact',component:ContactComponent,},
 
 ];
 
