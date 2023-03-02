@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Libre+Franklin');
+
+h1 {
+  font-family: 'Libre Franklin Bold', sans-serif;
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+
+.wrapper {  
+  font-family: 'Libre Baskerville', serif;
+  color: #b7710fce;  
+  background-image: linear-gradient(to top, #b7710fce 0%, #FFB88C 100%);
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 2em;
+  background-color: transparent;
+  min-height: 100vh;
+}
+
+.contact-box {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 0.17em solid white;
+  padding: 1.9em;
+  margin-top: 1.3em;
+  width: 40vw;
+  min-width: 17em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  flex-flow: column wrap;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 0.63em;
+  margin-bottom: 0.32em;
+}
+
+.input-text {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.94rem;
+  color: #000;
+  background-color: white;
+  width: 33vw;
+  min-width: 16.5em;
+  margin: 0.5em 0;
+  padding: 1em;
+  border: 0.17em solid #b7710fce;
+}
+
+#message {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.94rem;
+  background-color: white;
+  color: #6F4E37;
+  border: 0.17em solid #b7710fce;
+  width: 33vw;
+  min-width: 16.5em;
+  margin: 0.5em 0;
+  padding: 1em;
+}
+
+::placeholder {
+  font-family: 'Libre Baskerville', sans-serif;
+}
+
+button {
+  background-color: #6F4E37;
+  color: white;
+  font-size: 0.94rem;
+  padding: 0.63em 0.94em;
+  border: none;
+  margin: 0.2em 0;
+  width: 8.75em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b7710fce;
+}
+
+button:active {
+  background-color: #6F4E37;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: hsl(244, 82%, 5%); 
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+  }
+  
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 6rem;
+  }
+  
+  @media (max-width: 600px) {
+    .icons {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .fa-brands {
+    font-size: 3rem;
+    transition: ease 500ms;
+    cursor: pointer;
+  }
+  
+  .fa-brands:hover {
+    transform: translateY(-10px);
+  }
+  
+  .fa-brands:nth-child(1):hover {
+    color: #00acee;
+  }
+  
+  .fa-brands:nth-child(2):hover {
+    color: #3b5998;
+  }
+  
+  .fa-brands:nth-child(3):hover {
+    background: linear-gradient(
+      to top left, 
+      #feda75 0%,
+      #feda75 15%,
+      #fa7e1e 30%,
+      #d62976 45%,
+      #962fbf 65%,
+      #4f5bd5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .fa-brands:nth-child(4):hover {
+    color: #151515;
+  }
+  .name{
+    color: #fff;
+  }
