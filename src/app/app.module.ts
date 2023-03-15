@@ -15,6 +15,9 @@ import { ServiceComponent } from './service/service.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactComponent } from './contact/contact.component';
+import { AddserviceComponent } from './addservice/addservice.component';
+import { EditComponent } from './edit/edit.component';
+import { AddmenuComponent } from './addmenu/addmenu.component';
 
 
 
@@ -33,6 +36,9 @@ import { ContactComponent } from './contact/contact.component';
     AppointmentComponent,
     AboutusComponent,
     ContactComponent,
+    AddserviceComponent,
+    EditComponent,
+    AddmenuComponent,
     
     
     
