@@ -9,6 +9,9 @@ import { ServiceComponent } from './service/service.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactComponent } from './contact/contact.component';
+import { AddserviceComponent } from './addservice/addservice.component';
+import { AddmenuComponent } from './addmenu/addmenu.component';
+import { EditComponent } from './edit/edit.component';
 
 
 const routes: Routes = [
@@ -22,6 +25,9 @@ const routes: Routes = [
   {path:'appointment',component:AppointmentComponent,},
   {path:'aboutus',component:AboutusComponent,},
   {path:'contact',component:ContactComponent,},
+  {path:'addservice',component:AddserviceComponent,},
+  {path:'addmenu',component:AddmenuComponent},
+  {path:'edit',component:EditComponent},
   
 
 ];

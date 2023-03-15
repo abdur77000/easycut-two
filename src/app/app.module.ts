@@ -15,9 +15,10 @@ import { ServiceComponent } from './service/service.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactComponent } from './contact/contact.component';
-import {HttpClientModule} from '@angular/common/http';
-
-
+import{AddserviceComponent} from './addservice/addservice.component'
+import {EditComponent,} from './edit/edit.component'
+import {AddmenuComponent} from './addmenu/addmenu.component'
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -36,6 +37,9 @@ import {HttpClientModule} from '@angular/common/http';
     AppointmentComponent,
     AboutusComponent,
     ContactComponent,
+    AddserviceComponent,
+    EditComponent,
+    AddmenuComponent,
     
     
     

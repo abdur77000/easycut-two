@@ -132,9 +132,9 @@
               <label for="registeras"><b>Register as:</b></label>
             <div class="form-radio">
              
-              <li> <input type="radio" class="form-co" name="registeras" value="U" formControlName="registeras">User Login</li>
-                <li> <input type="radio" name="registeras" value="M" formControlName="registeras">Merchant Login</li>
-                  <div class="form-text text-danger" *ngIf="Registeras.errors?.['required'] && ( Registeras.touched ||  Registeras.dirty)" >
+              <li> <input type="radio" class="form-co" name="Registeras" value="U" formControlName="Registeras">User Login</li>
+                <li> <input type="radio" name="Registeras" value="M" formControlName="Registeras">Merchant Login</li>
+                  <div class="form-text text-danger" *ngIf=" Registeras.errors?.['required'] && ( Registeras.touched ||  Registeras.dirty)" >
                     Value is Required.
                    </div>    
             </div>
