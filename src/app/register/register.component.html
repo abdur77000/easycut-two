@@ -132,16 +132,16 @@
               <label for="registeras"><b>Register as:</b></label>
             <div class="form-radio">
              
-              <li> <input type="radio" class="form-co" name="Registeras" value="U" formControlName="Registeras">User Login</li>
-                <li> <input type="radio" name="Registeras" value="M" formControlName="Registeras">Merchant Login</li>
-                  <div class="form-text text-danger" *ngIf=" Registeras.errors?.['required'] && ( Registeras.touched ||  Registeras.dirty)" >
+              <li> <input type="radio" class="form-co" name="registeras" value="U" formControlName="registeras">User Login</li>
+                <li> <input type="radio" name="registeras" value="M" formControlName="registeras">Merchant Login</li>
+                  <div class="form-text text-danger" *ngIf="Registeras.errors?.['required'] && ( Registeras.touched ||  Registeras.dirty)" >
                     Value is Required.
                    </div>    
             </div>
             <div class="row">
               <div class=" col mb-3">
             <label for="firstname" class="form-label"><b>First Name:</b></label>
-            <input type="text" class="form-control" id="firstname" formControlName="firstname">
+            <input type="text" class="form-control" id="firstname" formControlName="firstname" placeholder="First Name">
            <div class="form-text text-danger" *ngIf="FirstName.errors?.['required'] && (FirstName.touched || FirstName.dirty)">
             First Name is required.
            </div>
@@ -184,8 +184,8 @@
           </div>
           
           <div class="col mb-3">
-            <label for="Number"><b>Mobile Number:</b></label>
-            <input formControlName="Number" type="text" class="form-control" placeholder="Enter Number"  id="Number">
+            <label for="Mobile"><b>Mobile Number:</b></label>
+            <input formControlName="mobile" type="tel" class="form-control" name="mobile" placeholder="Enter Number"  id="Number">
             <div class="form-text text-danger" *ngIf="Mobile.errors?.['required'] && (Mobile.touched || Mobile.dirty)" >
               Number is Required.
              </div> 
@@ -206,11 +206,11 @@
             <div class="row">
               <div class="col mb-3">
             <label for=" pwd"><b>Password:</b></label>
-            <input formControlName=" pwd" type="password" class="form-control" placeholder="Enter Password" name=" pwd" id=" pwd">
+            <input formControlName="pwd" type="password" class="form-control" placeholder="Enter Password" name=" pwd" id=" pwd">
             <div class="form-text text-danger" *ngIf=" Pwd.errors?.['required'] && ( Pwd.touched ||  Pwd.dirty)" >
               Password is Required.
              </div>
-            <div class="form-text text-danger" *ngIf=" Pwd.errors?.['minlength'] ||  Pwd.errors?.['maxlength'] && ( Pwd.touched ||  Pwd.dirty)" >
+            <div class="form-text text-danger" *ngIf="Pwd.errors?.['minlength'] || Pwd.errors?.['maxlength'] && ( Pwd.touched || Pwd.dirty)" >
               Password should be atleast 6 and at the max 15 characters long.
               </div>
             </div>
@@ -218,7 +218,7 @@
             <div class="col mb-3">
             <label for="rpwd"><b>Repeat Password:</b></label>
             <input formControlName="rpwd" type="password" class="form-control" placeholder="Repeat Password" name="rpwd" id="rpwd">
-            <div class="form-text text-danger" [ngStyle]="{'display': repeatPass}"> 
+            <div class="form-text text-danger" [ngStyle]="{'display': repeatPass}" *ngIf=" RPwd.errors?.['minlength'] ||  RPwd.errors?.['maxlength'] && ( RPwd.touched ||  RPwd.dirty)"> 
               Repeat pass is Invalid.
             </div>
           </div>

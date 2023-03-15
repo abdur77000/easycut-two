@@ -11,21 +11,23 @@ repeatPass: string = 'all';
 
    constructor( ) { }
 
-   ngOnInit(): void {  }
+   ngOnInit(): void {  
+    
+   }
     //validations
 
   registerForm = new FormGroup({
-      firstname: new FormGroup ('',[Validators.required, Validators.minLength(3), Validators.pattern("[a-zA-Z].*")]),
-      lastname: new FormGroup ('',[Validators.required,Validators.minLength(3), Validators.pattern("[a-zA-Z].*")]),
-      email: new FormGroup ('',[Validators.required, Validators.email]), 
-      mobile: new FormGroup ('',[Validators.required, Validators.pattern("[0-9]*"), Validators.minLength(10), Validators.maxLength(10),]),
-      registeras: new FormGroup ('',[Validators.required]),
-      pwd: new FormGroup ('',[Validators.required, Validators.minLength(6), Validators.maxLength(15)]),
-      rpwd: new FormGroup ('',),
+      firstname: new FormControl ('',[Validators.required, Validators.minLength(3), Validators.pattern("[a-zA-Z].*")]),
+      lastname: new FormControl ('',[Validators.required,Validators.minLength(3), Validators.pattern("[a-zA-Z].*")]),
+      email: new FormControl ('',[Validators.required, Validators.email]), 
+      mobile: new FormControl ('',[Validators.required, Validators.pattern("[0-9]*"), Validators.minLength(10), Validators.maxLength(10)]),
+      registeras: new FormControl ('',[Validators.required]),
+      pwd: new FormControl ('',[Validators.required, Validators.minLength(6), Validators.maxLength(15)]),
+      rpwd: new FormControl (''),
     });
     registerSubmited(){
       if(this.Pwd.value == this.RPwd.value){
-        console.log(("Submited"));
+        console.log("Submited", this.registerForm.value);
       }else{
         this.repeatPass = 'inline'
       }

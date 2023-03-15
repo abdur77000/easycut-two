@@ -15,6 +15,9 @@ import { ServiceComponent } from './service/service.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactComponent } from './contact/contact.component';
+import {HttpClientModule} from '@angular/common/http';
+
+
 
 
 
@@ -37,12 +40,15 @@ import { ContactComponent } from './contact/contact.component';
     
     
     
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,16 +2,16 @@
     <div class="col-sm-6">
         <ul>
             <p class="h1 text-centre">Mens</p>
-            <li *ngFor="let service of services">
+            <li *ngFor="let data of data">
 
                 <a>
 
                     <div class="row">
                         <div class="col-sm-4">
-                            <p class="name">{{ service.name}}</p>
+                            <p class="name">{{data.service}}</p>
                         </div>
                         <div class="col-sm-4">
-                            <p class="price">{{ service.price }}</p>
+                            <p class="price">{{ data.price }}</p>
                         </div>
                         <div class="col-sm-4"><button class="book-button " routerLink="/appointment">Book Now</button>
                         </div>
@@ -25,11 +25,11 @@
     <div class="col-sm-6">
         <ul>
             <p class="h1 text-left ">Women</p>
-            <li *ngFor="let service of services">
+            <li *ngFor="let service of data">
                 <a>
                     <div class="row">
                         <div class="col-sm-4">
-                            <p class="name">{{ service.name}}</p>
+                            <p class="name">{{ service.service}}</p>
                         </div>
                         <div class="col-sm-4">
                             <p class="price">{{ service.price }}</p>

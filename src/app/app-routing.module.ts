@@ -10,6 +10,7 @@ import { AppointmentComponent } from './appointment/appointment.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactComponent } from './contact/contact.component';
 
+
 const routes: Routes = [
 
   {path:'home', component:HomeComponent,},
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:'appointment',component:AppointmentComponent,},
   {path:'aboutus',component:AboutusComponent,},
   {path:'contact',component:ContactComponent,},
+  
 
 ];
 
