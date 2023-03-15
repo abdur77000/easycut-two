@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { stores } from '../shared/model/stores';
 
+import { map } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
@@ -86,7 +87,7 @@ export class StoresService {
         address:'juhu',
         services:['men','women'],
         }
-        
+       
      
       
     ];
