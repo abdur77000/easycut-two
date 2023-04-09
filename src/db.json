@@ -1,0 +1,116 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "xyz",
+      "email": "xyz@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "name": "xyz",
+      "email": "ayaz@gmail.com",
+      "password": "123"
+    },
+    {
+      "firstname": "asda",
+      "lastname": "adsf",
+      "email": "adsf@gmadf",
+      "mobile": "3453453454",
+      "registeras": "",
+      "pwd": "123456",
+      "rpwd": "123456",
+      "id": 3
+    },
+    {
+      "firstname": "Abdur",
+      "lastname": "Rahman",
+      "email": "shaikhabdurrahman958@gmail.com",
+      "mobile": "0770027823",
+      "registeras": "",
+      "pwd": "1234567",
+      "rpwd": "1234567",
+      "id": 4
+    },
+    {
+      "firstname": "Abdur",
+      "lastname": "Rahman",
+      "email": "shaikhabdurrahman958@gmail.com",
+      "mobile": "0770278232",
+      "registeras": "",
+      "pwd": "12345678",
+      "rpwd": "12345678",
+      "id": 5
+    },
+    {
+      "firstname": "Abdur",
+      "lastname": "Rahman",
+      "email": "shaikhabdurrahman958@gmail.com",
+      "mobile": "0770027823",
+      "registeras": "",
+      "pwd": "12345678",
+      "rpwd": "12345678",
+      "id": 6
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "mobile": "",
+      "registeras": "",
+      "pwd": "",
+      "rpwd": "",
+      "id": 7
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "mobile": "",
+      "registeras": "",
+      "pwd": "",
+      "rpwd": "",
+      "id": 8
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "mobile": "",
+      "registeras": "",
+      "pwd": "",
+      "rpwd": "",
+      "id": 9
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "mobile": "",
+      "registeras": "",
+      "pwd": "",
+      "rpwd": "",
+      "id": 10
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "mobile": "",
+      "registeras": "",
+      "pwd": "",
+      "rpwd": "",
+      "id": 11
+    },
+    {
+      "firstname": "Abdur",
+      "lastname": "Rahman",
+      "email": "shaikhabdurrahman958@gmail.com",
+      "mobile": "0770027823",
+      "registeras": "",
+      "pwd": "123456789",
+      "rpwd": "123456789",
+      "id": 12
+    }
+  ]
+}

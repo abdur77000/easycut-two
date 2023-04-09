@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { MerchantService } from '../services/merchant.service';
+import { signUp } from '../shared/merchant';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -8,12 +11,23 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 export class RegisterComponent implements OnInit {
  
 repeatPass: string = 'all';
+  register: any;
+  signUp: any;
 
-   constructor( ) { }
+   constructor(private merchant:MerchantService, ) { }
 
-   ngOnInit(): void {  
+   ngOnInit(): void { 
+    this.signUp.reloadSeller
+    }
+
+  //  signUp(data:signUp):void{
+  //   console.warn(data)
+  //   this.Merchant.userSignup(data).subscribe((result)=>{
+  //     console.warn(result)
+  //   })
+  //  }
     
-   }
+   
     //validations
 
   registerForm = new FormGroup({
@@ -28,6 +42,13 @@ repeatPass: string = 'all';
     registerSubmited(){
       if(this.Pwd.value == this.RPwd.value){
         console.log("Submited", this.registerForm.value);
+         this.merchant.userSignup(this.registerForm.value)//.subscribe((res)=>{
+        //   console.log(res)
+        //   if(res){
+        //     this.router.navigate(['dashboard-sidebar'])
+
+        //   }
+        // })
       }else{
         this.repeatPass = 'inline'
       }
