@@ -25,13 +25,13 @@ export class MerchantService {
       'content-type': 'application/json',
       Authorization: 'abcde',
     });
-    return this.http.post('http://localhost:3000/user',data,{observe:'response'}).subscribe((result)=>{
-      console.warn(result)
-      if(result){
-        localStorage.setItem('signUp',JSON.stringify(result.body))
-        this.router.navigate(['dashboard-sidebar'])
-      }
-    })
+    return this.http.post('http://localhost:3000/users',data,{observe:'response'})
+      // console.warn(result)
+      // if(result.status === 201){
+      //   localStorage.setItem('signUp',JSON.stringify(result.body))
+      //   this.router.navigate(['login'])
+      // }
+    // })
   } 
   reloadSeller(){
     if(localStorage.getItem('signUp')){
@@ -49,6 +49,10 @@ export class MerchantService {
 
 
   }
+  }
+
+  getUsers(){
+    return this.http.get('http://localhost:3000/users')
   }
 }
 
