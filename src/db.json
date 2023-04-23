@@ -1,56 +1,34 @@
 {
-  "user": [
+  "users": [
     {
-      "id": 1,
-      "name": "xyz",
-      "email": "xyz@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": 2,
-      "name": "xyz",
-      "email": "ayaz@gmail.com",
-      "password": "123"
-    },
-    {
-      "firstname": "asda",
+      "firstname": "aadf",
       "lastname": "adsf",
-      "email": "adsf@gmadf",
-      "mobile": "3453453454",
-      "registeras": "",
+      "email": "adf@sdf",
+      "mobile": "9456454445",
+      "registeras": "User",
       "pwd": "123456",
       "rpwd": "123456",
-      "id": 3
+      "id": 19
     },
     {
-      "firstname": "Abdur",
-      "lastname": "Rahman",
-      "email": "shaikhabdurrahman958@gmail.com",
-      "mobile": "0770027823",
-      "registeras": "",
-      "pwd": "1234567",
-      "rpwd": "1234567",
-      "id": 4
+      "firstname": "Ayaz",
+      "lastname": "shaikh",
+      "email": "ayaz@gmail.com",
+      "mobile": "9898989899",
+      "registeras": "Merchant",
+      "pwd": "123456",
+      "rpwd": "123456",
+      "id": 20
     },
     {
-      "firstname": "Abdur",
-      "lastname": "Rahman",
-      "email": "shaikhabdurrahman958@gmail.com",
-      "mobile": "0770278232",
-      "registeras": "",
-      "pwd": "12345678",
-      "rpwd": "12345678",
-      "id": 5
-    },
-    {
-      "firstname": "Abdur",
-      "lastname": "Rahman",
-      "email": "shaikhabdurrahman958@gmail.com",
-      "mobile": "0770027823",
-      "registeras": "",
-      "pwd": "12345678",
-      "rpwd": "12345678",
-      "id": 6
+      "firstname": "najmi",
+      "lastname": "shaikh",
+      "email": "najmi@gmail.com",
+      "mobile": "9898989888",
+      "registeras": "User",
+      "pwd": "123456",
+      "rpwd": "123456",
+      "id": 21
     },
     {
       "firstname": "",
@@ -60,7 +38,7 @@
       "registeras": "",
       "pwd": "",
       "rpwd": "",
-      "id": 7
+      "id": 22
     },
     {
       "firstname": "",
@@ -70,47 +48,37 @@
       "registeras": "",
       "pwd": "",
       "rpwd": "",
-      "id": 8
+      "id": 23
     },
     {
-      "firstname": "",
-      "lastname": "",
-      "email": "",
-      "mobile": "",
-      "registeras": "",
-      "pwd": "",
-      "rpwd": "",
-      "id": 9
+      "firstname": "adsf",
+      "lastname": "adf",
+      "email": "afd@d",
+      "mobile": "9898989899",
+      "registeras": "User",
+      "pwd": "123456",
+      "rpwd": "123456",
+      "id": 24
     },
     {
-      "firstname": "",
-      "lastname": "",
-      "email": "",
-      "mobile": "",
-      "registeras": "",
-      "pwd": "",
-      "rpwd": "",
-      "id": 10
+      "firstname": "abdul",
+      "lastname": "shaikh",
+      "email": "abdul@gmail.com",
+      "mobile": "9898989899",
+      "registeras": "User",
+      "pwd": "123456",
+      "rpwd": "123456",
+      "id": 25
     },
     {
-      "firstname": "",
-      "lastname": "",
-      "email": "",
-      "mobile": "",
-      "registeras": "",
-      "pwd": "",
-      "rpwd": "",
-      "id": 11
-    },
-    {
-      "firstname": "Abdur",
-      "lastname": "Rahman",
-      "email": "shaikhabdurrahman958@gmail.com",
-      "mobile": "0770027823",
-      "registeras": "",
-      "pwd": "123456789",
-      "rpwd": "123456789",
-      "id": 12
+      "firstname": "sdfasdf",
+      "lastname": "sadfasd",
+      "email": "asdf@afwd",
+      "mobile": "4563465345",
+      "registeras": "User",
+      "pwd": "123456",
+      "rpwd": "123456",
+      "id": 26
     }
   ]
 }

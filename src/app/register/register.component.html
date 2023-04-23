@@ -121,6 +121,15 @@
 </div>
 </div>
 </div>-->
+<div class="alert alert-success" role="alert" *ngIf=success>
+  Registration successful
+</div>
+<div class="alert alert-danger" role="alert" *ngIf="registerForm.status == 'INVALID' && isSumbitted">
+  Please fill all the fields
+</div>
+<div class="alert alert-danger" role="alert" *ngIf="registerForm.value.pwd !== registerForm.value.rpwd && isSumbitted ">
+  Password did not match
+</div>
 <div class="register-block">
 <div class="container">
   <div class="content">
@@ -132,11 +141,11 @@
               <label for="registeras"><b>Register as:</b></label>
             <div class="form-radio">
              
-              <li> <input type="radio" class="form-co" name="Registeras" value="U" formControlName="Registeras">User Login</li>
-                <li> <input type="radio" name="Registeras" value="M" formControlName="Registeras">Merchant Login</li>
-                  <div class="form-text text-danger" *ngIf=" Registeras.errors?.['required'] && ( Registeras.touched ||  Registeras.dirty)" >
+              <li> <input type="radio"formControlName="registeras" id="user" class="form-co" value="User" >User Login</li>
+                <li> <input type="radio"  formControlName="registeras" id="merchant" value="Merchant">Merchant Login</li>
+                  <!-- <div class="form-text text-danger" *ngIf=" Registeras.errors?.['required'] && ( Registeras.touched ||  Registeras.dirty)" >
                     Value is Required.
-                   </div>    
+                   </div>     -->
             </div>
             <div class="row">
               <div class=" col mb-3">

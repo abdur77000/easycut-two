@@ -13,11 +13,13 @@ export class RegisterComponent implements OnInit {
 repeatPass: string = 'all';
   register: any;
   signUp: any;
+  success: boolean = false;
+  isSumbitted: boolean = false;
 
-   constructor(private merchant:MerchantService, ) { }
+   constructor(private merchant:MerchantService, private router:Router ) { }
 
    ngOnInit(): void { 
-    this.signUp.reloadSeller
+    // this.signUp.reloadSeller
     }
 
   //  signUp(data:signUp):void{
@@ -40,15 +42,20 @@ repeatPass: string = 'all';
       rpwd: new FormControl (''),
     });
     registerSubmited(){
-      if(this.Pwd.value == this.RPwd.value){
-        console.log("Submited", this.registerForm.value);
-         this.merchant.userSignup(this.registerForm.value)//.subscribe((res)=>{
-        //   console.log(res)
-        //   if(res){
-        //     this.router.navigate(['dashboard-sidebar'])
+      console.log("Submited", this.registerForm);
+      this.isSumbitted = true;
+      if(this.Pwd.value == this.RPwd.value && this.registerForm.status !== "INVALID"){
+         this.merchant.userSignup(this.registerForm.value).subscribe((res)=>{
+          console.log(res)
+          if(res.status === 201){
+            // this.router.navigate(['dashboard-sidebar'])
+            this.success = true;
+            setTimeout(()=>{
+            this.router.navigate(['login']);
+            }, 1000)
 
-        //   }
-        // })
+          }
+        })
       }else{
         this.repeatPass = 'inline'
       }

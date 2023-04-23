@@ -13,7 +13,7 @@ import { AddserviceComponent } from './addservice/addservice.component';
 import { AddmenuComponent } from './addmenu/addmenu.component';
 import { EditComponent } from './edit/edit.component';
 import { DashboardSidebarComponent } from './dashboard-sidebar/dashboard-sidebar.component';
-import { AuthGuard } from './auth.guard';
+// import { AuthGuard } from './auth.guard';
 
 
 const routes: Routes = [
@@ -30,7 +30,8 @@ const routes: Routes = [
   {path:'addservice',component:AddserviceComponent,},
   {path:'addmenu',component:AddmenuComponent},
   {path:'edit',component:EditComponent},
- { path:'dashboard-sidebar',canActivate:[AuthGuard],component:DashboardSidebarComponent}
+//  { path:'dashboard-sidebar',canActivate:[AuthGuard],component:DashboardSidebarComponent}
+ { path:'dashboard-sidebar', component: DashboardSidebarComponent}
   
 
 ];
