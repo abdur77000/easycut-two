@@ -20,6 +20,7 @@ import {EditComponent,} from './edit/edit.component'
 import {AddmenuComponent} from './addmenu/addmenu.component'
 import { HttpClientModule } from '@angular/common/http';
 import { AdminprofileComponent } from './adminprofile/adminprofile.component';
+import { DashboardSidebarComponent } from './dashboard-sidebar/dashboard-sidebar.component';
 
 
 
@@ -42,8 +43,7 @@ import { AdminprofileComponent } from './adminprofile/adminprofile.component';
     EditComponent,
     AddmenuComponent,
     AdminprofileComponent,
-
-    
+    DashboardSidebarComponent,
     
     
     

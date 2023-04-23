@@ -3,7 +3,7 @@
 
 <ul >
   <li *ngFor="let store of stores">
-    <a routerLink="/service">
+    <a (click)="navigateToServive()">
       <img src="{{ store.imageurl }}" alt="store image" />
       <div class="content">
         <div class="name">

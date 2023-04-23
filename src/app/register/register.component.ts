@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { MerchantService } from '../services/merchant.service';
+import { signUp } from '../shared/merchant';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -8,12 +11,25 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 export class RegisterComponent implements OnInit {
  
 repeatPass: string = 'all';
+  register: any;
+  signUp: any;
+  success: boolean = false;
+  isSumbitted: boolean = false;
 
-   constructor( ) { }
+   constructor(private merchant:MerchantService, private router:Router ) { }
 
-   ngOnInit(): void {  
+   ngOnInit(): void { 
+    // this.signUp.reloadSeller
+    }
+
+  //  signUp(data:signUp):void{
+  //   console.warn(data)
+  //   this.Merchant.userSignup(data).subscribe((result)=>{
+  //     console.warn(result)
+  //   })
+  //  }
     
-   }
+   
     //validations
 
   registerForm = new FormGroup({
@@ -26,8 +42,20 @@ repeatPass: string = 'all';
       rpwd: new FormControl (''),
     });
     registerSubmited(){
-      if(this.Pwd.value == this.RPwd.value){
-        console.log("Submited", this.registerForm.value);
+      console.log("Submited", this.registerForm);
+      this.isSumbitted = true;
+      if(this.Pwd.value == this.RPwd.value && this.registerForm.status !== "INVALID"){
+         this.merchant.userSignup(this.registerForm.value).subscribe((res)=>{
+          console.log(res)
+          if(res.status === 201){
+            // this.router.navigate(['dashboard-sidebar'])
+            this.success = true;
+            setTimeout(()=>{
+            this.router.navigate(['login']);
+            }, 1000)
+
+          }
+        })
       }else{
         this.repeatPass = 'inline'
       }
