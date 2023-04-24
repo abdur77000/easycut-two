@@ -19,6 +19,7 @@ import{AddserviceComponent} from './addservice/addservice.component'
 import {EditComponent,} from './edit/edit.component'
 import {AddmenuComponent} from './addmenu/addmenu.component'
 import { HttpClientModule } from '@angular/common/http';
+import { AdminprofileComponent } from './adminprofile/adminprofile.component';
 
 
 
@@ -40,6 +41,9 @@ import { HttpClientModule } from '@angular/common/http';
     AddserviceComponent,
     EditComponent,
     AddmenuComponent,
+    AdminprofileComponent,
+
+    
     
     
     
